@@ -1,5 +1,6 @@
 {
   "name": "@twocatmoon/react-slot",
+  "private": false,
   "version": "0.1.0",
   "description": "A cleaner alternative for managing children in React components via named slots.",
   "main": "dist/index.js",
