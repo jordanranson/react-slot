@@ -34,7 +34,7 @@ export function Slot ({ name, children }) {
  *
  * @example
  * export default function MyComponent ({ children }) {
- *   const { named, default } = findSlots(children)
+ *   const { named, defaultSlot } = findSlots(children)
  * 
  *   return (
  *     <div>
@@ -58,7 +58,7 @@ export function findSlots (children) {
     }
     return slots
   }, {})
-  slots.default = children.filter((child) => child !== null)
+  slots.defaultSlot = children.filter((child) => child !== null)
 
   return slots
 }
