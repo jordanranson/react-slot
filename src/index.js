@@ -34,13 +34,13 @@ export function Slot ({ name, children }) {
  *
  * @example
  * export default function MyComponent ({ children }) {
- *   const { named, defaultSlot } = findSlots(children)
+ *   const slots = findSlots(children)
  * 
  *   return (
  *     <div>
  *       <div>{slots.foo}</div>
  *       <div>{slots.bar}</div>
- *       <div>{defaultSlot}</div>
+ *       <div>{slots.defaultSlot}</div>
  *     </div>
  *   )
  * })
